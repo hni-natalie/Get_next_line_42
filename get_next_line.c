@@ -23,7 +23,7 @@ char	*read_line(int fd, char *current)
 	while (read_check > 0 && !ft_strchr(current, '\n'))
 	{
 		read_check = read(fd, line, BUFFER_SIZE);
-		if (read_check ==  -1)
+		if (read_check == -1)
 			return (free(line), NULL);
 		line[read_check] = '\0';
 		tmp = current;
@@ -78,7 +78,7 @@ char	*rest_of_line(char *line)
 		remainder[j++] = line[i++];
 	remainder[j] = '\0';
 	free(line);
-	return(remainder);
+	return (remainder);
 }
 
 /**
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 	current = read_line(fd, current);
 	buffer = get_line(current);
 	current = rest_of_line(current);
-	return(buffer);
+	return (buffer);
 }
 
 /* int main(void)

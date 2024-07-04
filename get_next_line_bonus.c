@@ -95,8 +95,12 @@ char	*get_next_line(int fd)
 }
 
 // stores the original pointer 'current' in 'tmp' before modifying 'current'
-// this ensures that u still have a reference to the original memory block pointed
-// to by 'current', which you need to free after the new string is created
+// this ensures that u still have a reference 
+// to the original memory block pointed to by 'current', 
+// which you need to free after the new string is created
+
+// read(fd, 0, 0) < 0 check whether that is a valid file descriptor 
+// that can be read from
 
 /* int main(void)
 {

@@ -6,14 +6,14 @@
 #    By: wxuerui <wxuerui@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/30 18:20:58 by wxuerui           #+#    #+#              #
-#    Updated: 2024/07/04 13:09:24 by hni-xuan         ###   ########.fr        #
+#    Updated: 2024/07/04 14:39:53 by hni-xuan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #variables
 
 NAME	= tester
-GNL_DIR = /Users/hni-xuan/Desktop/get_next_line_42/
+GNL_DIR = /Users/hni-xuan/Desktop/get_next_line/
 CC	= gcc
 GNL_HEADER = -I $(GNL_DIR)get_next_line.h
 BONUS_GNL_HEADER = -I $(GNL_DIR)get_next_line_bonus.h
