@@ -114,15 +114,11 @@ char	*get_next_line(int fd)
 	for (int i = 0; i < 2; i++)
 	{
 		line = get_next_line(fd);
-		printf("Read: %s\n", line);
-		if (line)
-			free(line);
-	}
-	for (int j = 0; j < 2; j++)
-	{
 		line1 = get_next_line(fd1);
-		printf("Read second file: %s\n", line1);
+		printf("Read: %s\n", line);
+		printf("Read: %s\n", line1);
 		free(line1);
+		free(line);
 	}
 	close(fd);
 	return (0);
