@@ -12,9 +12,6 @@ char	*read_line(int fd, char *current)
 		if (read_check == -1)
 			return (free(line), NULL);
 		line[read_check] = '\0';
-tmp is used to tenporarily hold the current value of 'current'
-prevent memory leak as if ft_strjoin allocates new memory for 'current'
-the previous allocated memory can be freed 
 		tmp = current;
 		current = ft_strjoin(current, line);
 		free(tmp);
@@ -22,3 +19,8 @@ the previous allocated memory can be freed
 	free(line);
 	return (current);
 }
+
+why do 'tmp' should be defined?
+tmp is used to tenporarily hold the current value of 'current'
+prevent memory leak as if ft_strjoin allocates new memory for 'current'
+the previous allocated memory can be freed 
