@@ -45,7 +45,6 @@ char	*get_line(char *str)
 	while (str[i] != '\0' && str[i] != '\n')
 		i++;
 	line = ft_calloc((i + 2), sizeof(char));
-	i++;
 	i = 0;
 	while (str[i] != '\0' && str[i] != '\n')
 	{
