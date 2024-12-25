@@ -6,7 +6,7 @@
 /*   By: hni-xuan <hni-xuan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:01:08 by hni-xuan          #+#    #+#             */
-/*   Updated: 2024/06/27 18:02:30 by hni-xuan         ###   ########.fr       */
+/*   Updated: 2024/12/25 11:31:12 by hni-xuan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*rest_of_line(char *line)
 	int		j;
 	char	*remainder;
 
-	if (!line || !(line + 1))
+	if (!line || !*line)
 		return (NULL);
 	i = 0;
 	while (line[i] != '\n' && line[i] != '\0')
