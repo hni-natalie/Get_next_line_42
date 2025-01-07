@@ -22,6 +22,6 @@
 	return (current);
 	}
 
-why do 'tmp' should be defined?
+Why do 'tmp' should be defined?
 
 tmp is used to tenporarily hold the current value of 'current' prevent memory leak as if ft_strjoin allocates new memory for 'current' the previous allocated memory can be freed 
